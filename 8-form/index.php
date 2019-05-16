@@ -18,7 +18,7 @@
     </div>
 
     <div class="col-md-6">
-    <h2>Enter Student Inforamtion</h2>
+    <h2>Enter Student Information</h2>
       <form action="./display.php" method="get" class="needs-validation" novalidate>
 
       <div class="form-group">
