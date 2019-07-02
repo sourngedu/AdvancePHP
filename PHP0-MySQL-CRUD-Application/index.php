@@ -38,8 +38,8 @@
                     require_once "config.php";
                     
                     // Attempt select query execution
-                    $sql = "SELECT * FROM employees";
-                    if($result = $pdo->query($sql)){
+                    $sqlEmp = "SELECT * FROM employees";					
+                    if($result = $pdo->query($sqlEmp)){
                         if($result->rowCount() > 0){
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
