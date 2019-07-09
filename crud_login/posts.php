@@ -87,7 +87,7 @@ include_once ('config/session.php');
                 <span class="icon text-white-50">
                   <i class="fas fa-plus"></i>
                 </span>
-                <span class="text">Add New</span>
+                <span class="text">Add New Employee</span>
               </a>
 
 
