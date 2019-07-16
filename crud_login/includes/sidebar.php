@@ -37,6 +37,7 @@
         <h6 class="collapse-header">Posts</h6>
         <a class="collapse-item" href="posts.php">All Posts</a>
         <a class="collapse-item" href="categories.php">Categories</a>
+		<a class="collapse-item" href="employees.php">Employees</a>
     </div>
     </div>
 </li>

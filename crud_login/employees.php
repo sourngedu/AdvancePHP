@@ -81,13 +81,13 @@ include_once ('config/session.php');
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-0 font-weight-bold text-primary float-left">Posts List</h4>
+              <h4 class="m-0 font-weight-bold text-primary float-left">Employee List</h4>
               <!-- <a  class="float-right"href="">Add New</a> -->
               <a href="create.php" class="btn btn-success btn-sm btn-icon-split float-right">
                 <span class="icon text-white-50">
                   <i class="fas fa-plus"></i>
                 </span>
-                <span class="text">Add New Post</span>
+                <span class="text">Add New Employee</span>
               </a>
 
 
@@ -98,7 +98,7 @@ include_once ('config/session.php');
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <?php
                   // Attempt select query execution
-                  $sql = "SELECT * FROM article";
+                  $sql = "SELECT * FROM employees";
                   $result = $pdo->query($sql);
                   if($result){
                   if($result->rowCount() > 0){
@@ -106,20 +106,20 @@ include_once ('config/session.php');
 
                   <thead>
                     <tr>
-                    <th>ID</th>
-                      <th>Title</th>
-                      <th>Create By</th>
-                      <th>Create Date</th>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Address</th>
+                      <th>Salary</th>
                       <th>Action</th>
                     </tr>
                   </thead>
 
                   <tfoot>
                     <tr>
-                      <th>ID</th>
-                      <th>Title</th>
-                      <th>Create By</th>
-                      <th>Create Date</th>
+                    <th>ID</th>
+                      <th>Name</th>
+                      <th>Address</th>
+                      <th>Salary</th>
                       <th>Action</th>
                     </tr>
                   </tfoot>
@@ -130,9 +130,9 @@ include_once ('config/session.php');
                       ?>    
                         <tr class="success">
                           <td><?php echo $row['id']?></td>
-                          <td><a href="read.php?id=<?php echo $row['id']; ?>" title='Detail <?php echo $row['title']?>' data-toggle='tooltip' ><img style="width:32px;" src="upload/<?php echo $row['photo']?>"> <?php echo $row['title']?></a></td>
-                          <td><?php echo $row['created_by']?></td>
-                          <td><?php echo $row['created_date']?></td>
+                          <td><a href="read.php?id=<?php echo $row['id']; ?>" title='Detail <?php echo $row['name']?>' data-toggle='tooltip' ><img style="width:32px;" src="upload/<?php echo $row['photo']?>"> <?php echo $row['name']?></a></td>
+                          <td><?php echo $row['address']?></td>
+                          <td><?php echo $row['salary']?></td>
                           <td>
                           <a href="read.php?id=<?php echo $row['id']; ?>" class="btn btn-info btn-circle">
                             <i class="fas fa-info-circle"></i>
