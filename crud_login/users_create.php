@@ -10,7 +10,7 @@ include_once ('config/session.php');
 <?php
  
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
+$username = $password = $confirm_password = ""; //ផ្ទេរតម្លៃទទេឲ្យទៅ​អញ្ញាតិនិមួយៗ
 $username_err = $password_err = $confirm_password_err = "";
  
 // Processing form data when form is submitted

@@ -73,6 +73,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -153,7 +155,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                 </div>
                                 <div class="col-md-8">  
-                                <h1 class="h3 mb-2 text-gray-800">Create Category</h1>                            
+                                    <h1 class="h3 mb-2 text-gray-800">Create Category</h1>                            
                                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">   
                                         <div class="form-group">
                                             <label>Category Name</label>

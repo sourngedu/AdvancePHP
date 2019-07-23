@@ -89,12 +89,11 @@ include_once ('config/session.php');
                 </span>
                 <span class="text">Add New Category</span>
             </a>
-
-
             </div>
+
+            
             <div class="card-body">
-            <div class="table-responsive">
-              
+            <div class="table-responsive">              
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <?php
                 // Attempt select query execution
