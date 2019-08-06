@@ -26,7 +26,7 @@ include_once ('config/session.php');
             <?php include_once('sidebar.php'); ?>
         <!-- End Left Sidebar -->
 
-        <div class="col-sm-8">    
+        <div class="col-sm-10">    
 
             <?php 
                 $page=$frm="";

@@ -46,7 +46,7 @@
             ?>    
                 <tr class="success">
                     <td><?php echo $row['category_id']?></td>
-                    <td><a href="read.php?id=<?php echo $row['id']; ?>" title='Detail <?php echo $row['title']?>' data-toggle='tooltip' ><?php echo $row['title']?></a></td>
+                    <td><a href="home.php?page=article&frm=read&id=<?php echo $row['id']; ?>" title='Detail <?php echo $row['title']?>' data-toggle='tooltip' ><?php echo $row['title']?></a></td>
                     <td><?php echo $row['created_date']?></td>
                                 
                     <td>

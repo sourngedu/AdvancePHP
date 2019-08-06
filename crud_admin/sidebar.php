@@ -1,4 +1,4 @@
-<div class="col-sm-4"> 
+<div class="col-sm-2"> 
     
     <ul class="nav nav-pills flex-column">
         <h4>Login : <?php echo htmlspecialchars($_SESSION["username"]); ?></h4>
@@ -12,7 +12,7 @@
         <a class="nav-link" href="home.php?page=article&frm=index">Articles</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Users</a>
+        <a class="nav-link" href="home.php?page=users&frm=index">Users</a>
         </li>
 
         <li class="nav-item">

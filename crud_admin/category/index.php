@@ -57,7 +57,7 @@
                         <a href="update.php?id=<?php echo $row['category_id']; ?>" class="btn btn-success btn-sm">
                             <i class="fas fa-check"></i> 
                         </a>
-                        <a class='btn btn-danger btn-sm' href="delete.php?id=<?php echo $row['category_id']; ?>" title='Delete Record' data-toggle='tooltip'><i class="fas fa-trash"></i> </a>
+                        <a class='btn btn-danger btn-sm' href="home.php?page=category&frm=delete&id=<?php echo $row['category_id']; ?>" title='Delete Record' data-toggle='tooltip'><i class="fas fa-trash"></i> </a>
                     </td>
 
                 </tr>
